@@ -1,4 +1,4 @@
-#**Traffic Sign Recognition** 
+# **Traffic Sign Recognition** 
 
 ## Project Writeup
 
@@ -34,9 +34,9 @@ The goals / steps of this project are the following:
 
 ---
 
-###Data Set Summary & Exploration
+### Data Set Summary & Exploration
 
-####1. Summary of the data set
+#### 1. Summary of the data set
 
 I used the pandas library to calculate summary statistics of the traffic
 signs data set:
@@ -47,7 +47,7 @@ signs data set:
 * The shape of a traffic sign image is 32x32x3
 * The number of unique classes/labels in the data set is 43
 
-####2. Include an exploratory visualization of the dataset.
+#### 2. Include an exploratory visualization of the dataset.
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the  traffic signs are represented in the training set.
 
@@ -57,7 +57,7 @@ As you can see, labels are not equaly represented, with Speed limit 50km/h (labe
 
 ###Design and Test a Model Architecture
 
-####1. Preprocessing the image data. 
+#### 1. Preprocessing the image data. 
 
 As a first step, I decided to convert the images to grayscale because the colours should not be important to distinguish traffic signs. They might even been distracting
 
@@ -75,7 +75,7 @@ But it did not work for me as the trained model had only 0.8 accuracy on the val
 So for now I just removed data augmentation. 
 
 
-####2. Final model architecture
+#### 2. Final model architecture
 
 My final model consisted of the following layers:
 
@@ -100,11 +100,11 @@ My final model consisted of the following layers:
  
 
 
-####3. Training the model
+#### 3. Training the model
 
 To train the model, I used an AdamOptimizer with a learning rate of 0.001. The batch size is 128 and I trained for 20 EPOCHS
 
-####4. Approach taken for finding a solution
+#### 4. Approach taken for finding a solution
 
 My final model results were:
 * training set accuracy of 0.95
@@ -118,9 +118,9 @@ The above results shows that I was not wrong as my model exeeds the expected val
 
  
 
-###Testing The Model on New Images
+### Testing The Model on New Images
 
-####1. Choosen  German traffic signs images
+#### 1. Choosen  German traffic signs images
 
 Here are ten German traffic signs that I found on the web:
 
@@ -131,7 +131,7 @@ Here are ten German traffic signs that I found on the web:
 
 I think that the model should be able to classify all theses images since the signs are clearly visible and well centered.
 
-####2. Model's predictions on the new traffic signs
+#### 2. Model's predictions on the new traffic signs
 
 Here are the results of the prediction:
 
@@ -152,7 +152,7 @@ Here are the results of the prediction:
 The model was able to correctly guess 9 of the 10 traffic signs, which gives an accuracy of 90%. This compares favorably to the accuracy on the test set of 95%
 
 
-####3. Mocel certainty for the  new images
+#### 3. Mocel certainty for the  new images
 
 The code for making predictions on my final model is located in the 27th cell of the Ipython notebook.
  
