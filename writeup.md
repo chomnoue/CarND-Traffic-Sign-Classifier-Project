@@ -152,7 +152,7 @@ Here are the results of the prediction:
 The model was able to correctly guess 9 of the 10 traffic signs, which gives an accuracy of 90%. This compares favorably to the accuracy on the test set of 95%
 
 
-#### 3. Mocel certainty for the  new images
+#### 3. Model certainty for the  new images
 
 The code for making predictions on my final model is located in the 27th cell of the Ipython notebook.
  
